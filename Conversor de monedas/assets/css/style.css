@@ -1,0 +1,73 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+.body .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  background-image: url(../img/premium_photo-1675479123905-92c438ce474b.jpeg);
+  flex-direction: column;
+  width: 500px;
+  height: 400px;
+  margin-bottom: 20px;
+}
+.body .container .title {
+  font-family: Arial;
+  font-size: 20px;
+  color: rgb(51, 228, 51);
+  text-align: center;
+  padding-bottom: 10px;
+}
+.body .container .titles {
+  font-family: Arial;
+  font-size: 20px;
+  color: rgb(0, 82, 0);
+  text-align: center;
+  padding-bottom: 10px;
+}
+.body .container .caja {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 25px;
+  background-color: rgb(224, 224, 224);
+}
+.body .container input {
+  height: 25px;
+}
+.body .container .tipo {
+  height: 25px;
+  width: 200px;
+}
+.body .container .a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.body .container .a .boton {
+  height: 50px;
+  width: 100px;
+  margin: 10px;
+}
+.body .container .respuesta {
+  font-family: Arial;
+  font-size: 30px;
+  color: rgb(0, 82, 0);
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}/*# sourceMappingURL=style.css.map */

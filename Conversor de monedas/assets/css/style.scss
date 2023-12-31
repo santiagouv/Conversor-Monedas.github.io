@@ -1,0 +1,71 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+};
+
+@mixin flex ($d, $j, $a) {
+    display: $d;
+    justify-content: $j;
+    align-items: $a;
+};
+
+@mixin font ($t, $c){
+    font-family: Arial;
+    font-size: $t;
+    color: $c;
+};
+
+.body {
+    @include flex(flex, center, center);
+    height: 100vh;
+    flex-direction: column;
+    .container {
+        @include flex(flex, center, center);
+        border: 1px solid black;
+        background-image: url(../img/premium_photo-1675479123905-92c438ce474b.jpeg);
+        flex-direction: column;
+        width: 500px;
+        height: 400px;
+        margin-bottom: 20px;
+        .title {
+            @include font(20px, rgb(51, 228, 51));
+            text-align: center;
+            padding-bottom: 10px;
+        };
+        .titles {
+            @include font(20px, rgb(0, 82, 0));
+            text-align: center;
+            padding-bottom: 10px;
+        }
+        .caja {
+            @include flex(flex, center, center);
+            flex-direction: column;
+            gap: 20px;
+            padding: 25px;
+            background-color: rgb(0, 82, 0);
+        };
+        input {
+            height: 25px;
+        };
+        .tipo {
+            height: 25px;
+            width: 200px;
+        };
+        .a {
+            @include flex(flex, center, center);
+            flex-direction: column;
+            .boton {
+                height: 50px;
+                width: 100px;
+                margin: 10px;
+            };
+        };
+        .respuesta {
+            @include font(30px, blue);
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+        };
+    };
+};
